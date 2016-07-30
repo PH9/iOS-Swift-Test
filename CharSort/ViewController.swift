@@ -16,8 +16,12 @@ class ViewController: UIViewController {
     let sorter = Sorter()
 
     @IBAction func submitButtonClicked(sender: AnyObject) {
-        let sorted = self.sorter.sort(inputTextField.text!)
-        outputLabel.text = sorted
+        let sortController = SortController(controller: self)
+        sortController.sort(inputTextField.text!)
     }
+
+//    func setOutputLabel(text: String) {
+//        outputLabel.text = text
+//    }
 
 }
