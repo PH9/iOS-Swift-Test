@@ -19,10 +19,15 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mE1-3q-8WV">
                                 <rect key="frame" x="137" y="68" width="46" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="submitButton"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="submitButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RWa-c8-8Q2"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Out put will goes here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6KK-WK-jRN">
-                                <rect key="frame" x="9.5" y="106" width="300" height="21"/>
+                                <rect key="frame" x="9" y="106" width="300" height="21"/>
+                                <accessibility key="accessibilityConfiguration" identifier="outputLabel"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="bk6-nj-3aZ"/>
                                 </constraints>
@@ -31,7 +36,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter input here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EFC-i4-0AQ">
-                                <rect key="frame" x="10.5" y="30" width="300" height="30"/>
+                                <rect key="frame" x="10" y="30" width="300" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="inputTextField"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="GaS-pd-tT9"/>
                                 </constraints>
@@ -42,7 +48,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="EFC-i4-0AQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GAs-wE-Q6P"/>
-                            <constraint firstItem="6KK-WK-jRN" firstAttribute="centerX" secondItem="mE1-3q-8WV" secondAttribute="centerX" id="RgO-cd-Dyf"/>
+                            <constraint firstItem="6KK-WK-jRN" firstAttribute="centerX" secondItem="mE1-3q-8WV" secondAttribute="centerX" constant="-1" id="RgO-cd-Dyf"/>
                             <constraint firstItem="6KK-WK-jRN" firstAttribute="top" secondItem="mE1-3q-8WV" secondAttribute="bottom" constant="8" id="VjD-bf-MXZ"/>
                             <constraint firstItem="EFC-i4-0AQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="al3-Ni-qRf"/>
                             <constraint firstItem="mE1-3q-8WV" firstAttribute="centerX" secondItem="EFC-i4-0AQ" secondAttribute="centerX" id="hII-Bz-m5U"/>
@@ -50,6 +56,10 @@
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="inputTextField" destination="EFC-i4-0AQ" id="bf0-vf-Fn3"/>
+                        <outlet property="outputLabel" destination="6KK-WK-jRN" id="0P9-fe-A9G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

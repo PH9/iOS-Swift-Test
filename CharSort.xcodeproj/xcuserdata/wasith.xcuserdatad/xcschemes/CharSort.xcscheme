@@ -38,6 +38,16 @@
                ReferencedContainer = "container:CharSort.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "655F9DFB1D4C7E12007A7AB8"
+               BuildableName = "CharSortUITests.xctest"
+               BlueprintName = "CharSortUITests"
+               ReferencedContainer = "container:CharSort.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
