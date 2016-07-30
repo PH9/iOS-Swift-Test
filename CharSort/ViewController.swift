@@ -8,20 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SortControllerProtocol {
 
     @IBOutlet weak var inputTextField: UITextField!
     @IBOutlet weak var outputLabel: UILabel!
-
-    let sorter = Sorter()
 
     @IBAction func submitButtonClicked(sender: AnyObject) {
         let sortController = SortController(controller: self)
         sortController.sort(inputTextField.text!)
     }
 
-//    func setOutputLabel(text: String) {
-//        outputLabel.text = text
-//    }
-
+    func displayResult(text: String) {
+        outputLabel.text = text
+    }
 }

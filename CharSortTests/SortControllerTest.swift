@@ -13,7 +13,18 @@ import XCTest
 class SortControllerTest: XCTestCase {
 
     func test_setUpResult_shouldHaveBeenCalled_afterClickedSubmitButton() {
-        let sortController = SortController(controller: ViewController())
+        let thisViewController = ThisViewController()
+        let sortController = SortController(controller: thisViewController)
         sortController.sort("zfa")
+
+        XCTAssertTrue(thisViewController.isCall)
+    }
+}
+
+class ThisViewController: SortControllerProtocol {
+    var isCall = false
+
+    func displayResult(result: String) {
+        self.isCall = true
     }
 }

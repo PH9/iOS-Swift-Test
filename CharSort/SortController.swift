@@ -9,13 +9,21 @@
 import Foundation
 import UIKit
 
+protocol SortControllerProtocol {
+    func displayResult(result: String)
+}
+
 class SortController {
 
-    init(controller: ViewController) {
+    var controller: SortControllerProtocol
 
+    init(controller: SortControllerProtocol) {
+        self.controller = controller
     }
 
     func sort(input: String) {
-
+        let sorter = Sorter()
+        let sorted = sorter.sort(input)
+        self.controller.displayResult(sorted)
     }
 }
