@@ -12,19 +12,40 @@ import XCTest
 
 class SortControllerTest: XCTestCase {
 
+    var thisViewController: ThisViewController!
+
+    override func setUp() {
+        thisViewController = ThisViewController()
+    }
+
     func test_setUpResult_shouldHaveBeenCalled_afterClickedSubmitButton() {
-        let thisViewController = ThisViewController()
+        XCTAssertFalse(thisViewController.isCalledDisplayResult)
+
         let sortController = SortController(controller: thisViewController)
         sortController.sort("zfa")
 
-        XCTAssertTrue(thisViewController.isCall)
+        XCTAssertTrue(thisViewController.isCalledDisplayResult)
+    }
+
+    func test_setDisplayEmpty_whenHasNoInput() {
+        XCTAssertFalse(thisViewController.isCalledDisplayEmpty)
+
+        let sortController = SortController(controller: thisViewController)
+        sortController.sort("")
+
+        XCTAssertTrue(thisViewController.isCalledDisplayEmpty)
     }
 }
 
 class ThisViewController: SortControllerProtocol {
-    var isCall = false
+    var isCalledDisplayResult = false
+    var isCalledDisplayEmpty = false
 
     func displayResult(result: String) {
-        self.isCall = true
+        self.isCalledDisplayResult = true
+    }
+
+    func displayEmpty() {
+        self.isCalledDisplayEmpty = true
     }
 }

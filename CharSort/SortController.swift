@@ -11,6 +11,7 @@ import UIKit
 
 protocol SortControllerProtocol {
     func displayResult(result: String)
+    func displayEmpty()
 }
 
 class SortController {
@@ -22,6 +23,10 @@ class SortController {
     }
 
     func sort(input: String) {
+        if (input == "") {
+            self.controller.displayEmpty()
+        }
+
         let sorter = Sorter()
         let sorted = sorter.sort(input)
         self.controller.displayResult(sorted)

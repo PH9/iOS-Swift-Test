@@ -21,4 +21,8 @@ class ViewController: UIViewController, SortControllerProtocol {
     func displayResult(text: String) {
         outputLabel.text = text
     }
+
+    func displayEmpty() {
+        outputLabel.text = ""
+    }
 }
