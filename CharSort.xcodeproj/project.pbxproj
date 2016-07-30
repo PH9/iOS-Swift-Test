@@ -16,6 +16,8 @@
 		655F9DEC1D4C5D22007A7AB8 /* CharSortTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F9DEB1D4C5D22007A7AB8 /* CharSortTests.swift */; };
 		655F9DF71D4C5D94007A7AB8 /* Sorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F9DF61D4C5D94007A7AB8 /* Sorter.swift */; };
 		655F9DFF1D4C7E12007A7AB8 /* CharSortUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F9DFE1D4C7E12007A7AB8 /* CharSortUITests.swift */; };
+		655F9E071D4C8839007A7AB8 /* SortControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F9E061D4C8839007A7AB8 /* SortControllerTest.swift */; };
+		655F9E091D4C8B6B007A7AB8 /* SortController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655F9E081D4C8B6B007A7AB8 /* SortController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		655F9DFC1D4C7E12007A7AB8 /* CharSortUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CharSortUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		655F9DFE1D4C7E12007A7AB8 /* CharSortUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharSortUITests.swift; sourceTree = "<group>"; };
 		655F9E001D4C7E12007A7AB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		655F9E061D4C8839007A7AB8 /* SortControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortControllerTest.swift; sourceTree = "<group>"; };
+		655F9E081D4C8B6B007A7AB8 /* SortController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 				655F9DE21D4C5D22007A7AB8 /* Info.plist */,
 				655F9DDA1D4C5D22007A7AB8 /* CharSort.xcdatamodeld */,
 				655F9DF61D4C5D94007A7AB8 /* Sorter.swift */,
+				655F9E081D4C8B6B007A7AB8 /* SortController.swift */,
 			);
 			path = CharSort;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			children = (
 				655F9DEB1D4C5D22007A7AB8 /* CharSortTests.swift */,
 				655F9DED1D4C5D22007A7AB8 /* Info.plist */,
+				655F9E061D4C8839007A7AB8 /* SortControllerTest.swift */,
 			);
 			path = CharSortTests;
 			sourceTree = "<group>";
@@ -265,6 +271,7 @@
 				655F9DD61D4C5D22007A7AB8 /* ViewController.swift in Sources */,
 				655F9DDC1D4C5D22007A7AB8 /* CharSort.xcdatamodeld in Sources */,
 				655F9DF71D4C5D94007A7AB8 /* Sorter.swift in Sources */,
+				655F9E091D4C8B6B007A7AB8 /* SortController.swift in Sources */,
 				655F9DD41D4C5D22007A7AB8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				655F9DEC1D4C5D22007A7AB8 /* CharSortTests.swift in Sources */,
+				655F9E071D4C8839007A7AB8 /* SortControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +500,7 @@
 				655F9DF21D4C5D22007A7AB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		655F9DF31D4C5D22007A7AB8 /* Build configuration list for PBXNativeTarget "CharSortTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +509,7 @@
 				655F9DF51D4C5D22007A7AB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		655F9E031D4C7E12007A7AB8 /* Build configuration list for PBXNativeTarget "CharSortUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +518,7 @@
 				655F9E051D4C7E12007A7AB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
