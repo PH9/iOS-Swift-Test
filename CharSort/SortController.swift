@@ -23,7 +23,7 @@ class SortController {
     }
 
     func sort(input: String) {
-        if (input == "") {
+        if input == "" {
             self.controller.displayEmpty()
         }
 
