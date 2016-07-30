@@ -10,9 +10,6 @@ import Foundation
 
 class Sorter {
     func sort(input: String) -> String {
-        if (input == "a") {
-            return input
-        }
-        return "ab"
+        return String(input.characters.sort())
     }
 }

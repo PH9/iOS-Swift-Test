@@ -16,12 +16,15 @@ class CharSortTests: XCTestCase {
     }
 
     /*
-        "input", "output"
+        teseData = [
+            ("{input}", "{output}")
+        ]
      */
     func test_Input_a_shouldReturn_a() {
         let testData = [
             ("a", "a"),
             ("ba", "ab"),
+            ("dog", "dgo")
         ]
 
         testData.forEach {
