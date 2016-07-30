@@ -8,8 +8,13 @@
 
 import Foundation
 
+/*
+ To sort lowercase and sorting characters
+ */
 class Sorter {
     func sort(input: String) -> String {
-        return String(input.characters.sort())
+        let noSpecialChars = input.stringByReplacingOccurrencesOfString(" ", withString: "")
+        let lowerInput = noSpecialChars.lowercaseString
+        return String(lowerInput.characters.sort())
     }
 }

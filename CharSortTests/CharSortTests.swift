@@ -24,7 +24,9 @@ class CharSortTests: XCTestCase {
         let testData = [
             ("a", "a"),
             ("ba", "ab"),
-            ("dog", "dgo")
+            ("dog", "dgo"),
+            ("Horse", "ehors"),
+            ("Hello world", "dehllloorw")
         ]
 
         testData.forEach {
@@ -32,5 +34,4 @@ class CharSortTests: XCTestCase {
             XCTAssertEqual(result, $1)
         }
     }
-
 }
