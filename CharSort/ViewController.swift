@@ -13,8 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var inputTextField: UITextField!
     @IBOutlet weak var outputLabel: UILabel!
 
+    let sorter = Sorter()
+
     @IBAction func submitButtonClicked(sender: AnyObject) {
-        let sorted = Sorter().sort(inputTextField.text!)
+        let sorted = self.sorter.sort(inputTextField.text!)
         outputLabel.text = sorted
     }
 
